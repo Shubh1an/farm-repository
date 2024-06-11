@@ -21,16 +21,16 @@ import PopularTractor from "../assets/images/popularTractor.png";
 import LatestTractor from "../assets/images/tract-blue.png";
 import MiniTractor from "../assets/images/sonalika-tract.png";
 import UsedTractor from "../assets/images/used-tract.png";
-export enum Sizes {
-  Mobile = "Mobile",
-  Tablet = "Tablet",
-  Desktop = "Desktop",
-}
-export enum Devices {
-  Mobile = 768,
+export const Sizes = {
+  Mobile: "Mobile",
+  Tablet: "Tablet",
+  Desktop: "Desktop",
+};
+export const Devices = {
+  Mobile: 768,
 
-  Desktop = "Desktop",
-}
+  Desktop: "Desktop",
+};
 export const categoryData = [
   { title: "Massey Ferguson", path: Cat3 },
   { title: "Swaraj", path: Cat8 },
@@ -79,7 +79,7 @@ export const HPDataMobile = [
 
   { title1: "46-50", title2: "51-55" },
 
-  { title1: "56-60" },
+  { title1: "56-60", title2: "51-55" },
 ];
 
 export const PopularTractorList = [
@@ -97,22 +97,6 @@ export const PopularTractorList = [
     mobileImg: PopularTractSmallImg,
     hp: 47,
     cylinder: 4,
-    liftingCapacity: 2000,
-  },
-  {
-    name: "Massey Ferguson 6026 MaxPro Wide Track tractor",
-    image: PopularTractor,
-    mobileImg: PopularTractSmallImg,
-    hp: 47,
-    cylinder: 3,
-    liftingCapacity: 2000,
-  },
-  {
-    name: "Massey Ferguson 6026 MaxPro Wide Track tractor",
-    image: PopularTractor,
-    mobileImg: PopularTractSmallImg,
-    hp: 47,
-    cylinder: 3,
     liftingCapacity: 2000,
   },
   {
@@ -165,22 +149,6 @@ export const MiniTractorList = [
     cylinder: 3,
     liftingCapacity: 2000,
   },
-  {
-    name: "Massey Ferguson 6026 MaxPro Wide Track tractor",
-    image: MiniTractor,
-    mobileImg: PopularTractSmallImg,
-    hp: 47,
-    cylinder: 3,
-    liftingCapacity: 2000,
-  },
-  {
-    name: "Massey Ferguson 6026 MaxPro Wide Track tractor",
-    image: MiniTractor,
-    mobileImg: PopularTractSmallImg,
-    hp: 47,
-    cylinder: 3,
-    liftingCapacity: 2000,
-  },
 ];
 export const LatestTractorList = [
   {
@@ -195,32 +163,8 @@ export const LatestTractorList = [
   {
     image: LatestTractor,
   },
-  {
-    image: LatestTractor,
-  },
-  {
-    image: LatestTractor,
-  },
 ];
 export const UsedTractorList = [
-  {
-    name: "Massey Ferguson 6026 MaxPro Wide Track tractor",
-    image: UsedTractor,
-    location: "Swargate, Pune 411042",
-    mobileImg: PopularTractSmallImg,
-    hp: 47,
-    year: 2019,
-    price: "2.3 lacs",
-  },
-  {
-    name: "Massey Ferguson 6026 MaxPro Wide Track tractor",
-    image: UsedTractor,
-    location: "Swargate, Pune 411042",
-    mobileImg: PopularTractSmallImg,
-    hp: 47,
-    year: 2019,
-    price: "2.3 lacs",
-  },
   {
     name: "Massey Ferguson 6026 MaxPro Wide Track tractor",
     image: UsedTractor,
